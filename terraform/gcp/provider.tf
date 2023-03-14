@@ -8,6 +8,6 @@ provider "google" {
 terraform {
   backend "gcs" {
     credentials = var.credentials_path
-    prefix      = "terragoat/${var.environment}"
+    prefix      = "pingsafe-vuln/${var.environment}"
   }
 }

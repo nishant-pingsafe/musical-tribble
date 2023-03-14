@@ -2,9 +2,9 @@ Metadata-Version: 2.1
 Name: checkov
 Version: 2.0.541
 Summary: Infrastructure as code static analysis
-Home-page: https://github.com/bridgecrewio/checkov
-Author: bridgecrew
-Author-email: meet@bridgecrew.io
+Home-page: https://github.com/pingsafeio/checkov
+Author: pingsafe
+Author-email: meet@pingsafe.io
 License: Apache License 2.0
 Platform: UNKNOWN
 Classifier: Environment :: Console
@@ -51,34 +51,34 @@ Requires-Dist: GitPython (==3.1.7) ; extra == 'dev'
 Requires-Dist: bandit ; extra == 'dev'
 Requires-Dist: jsonschema ; extra == 'dev'
 
-[![Hacktoberfest](docs/web/images/Hacktoberfest-1.png)](https://bridgecrew.io/blog/happy-hacktoberfest-2021/?utm_source=github&utm_medium=organic_oss&utm_campaign=checkov)
+[![Hacktoberfest](docs/web/images/Hacktoberfest-1.png)](https://pingsafe.io/blog/happy-hacktoberfest-2021/?utm_source=github&utm_medium=organic_oss&utm_campaign=checkov)
 
-[![checkov](https://raw.githubusercontent.com/bridgecrewio/checkov/master/docs/web/images/checkov_by_bridgecrew.png)](#)
+[![checkov](https://raw.githubusercontent.com/pingsafeio/checkov/master/docs/web/images/checkov_by_pingsafe.png)](#)
        
-[![Maintained by Bridgecrew.io](https://img.shields.io/badge/maintained%20by-bridgecrew.io-blueviolet)](https://bridgecrew.io/?utm_source=github&utm_medium=organic_oss&utm_campaign=checkov)
-[![build status](https://github.com/bridgecrewio/checkov/workflows/build/badge.svg)](https://github.com/bridgecrewio/checkov/actions?query=workflow%3Abuild)
-[![security status](https://github.com/bridgecrewio/checkov/workflows/security/badge.svg)](https://github.com/bridgecrewio/checkov/actions?query=event%3Apush+branch%3Amaster+workflow%3Asecurity) 
-[![code_coverage](https://raw.githubusercontent.com/bridgecrewio/checkov/master/coverage.svg?sanitize=true)](https://github.com/bridgecrewio/checkov/actions?query=workflow%3Acoverage) 
+[![Maintained by pingsafe.io](https://img.shields.io/badge/maintained%20by-pingsafe.io-blueviolet)](https://pingsafe.io/?utm_source=github&utm_medium=organic_oss&utm_campaign=checkov)
+[![build status](https://github.com/pingsafeio/checkov/workflows/build/badge.svg)](https://github.com/pingsafeio/checkov/actions?query=workflow%3Abuild)
+[![security status](https://github.com/pingsafeio/checkov/workflows/security/badge.svg)](https://github.com/pingsafeio/checkov/actions?query=event%3Apush+branch%3Amaster+workflow%3Asecurity)
+[![code_coverage](https://raw.githubusercontent.com/pingsafeio/checkov/master/coverage.svg?sanitize=true)](https://github.com/pingsafeio/checkov/actions?query=workflow%3Acoverage)
 [![docs](https://img.shields.io/badge/docs-passing-brightgreen)](https://www.checkov.io/1.Welcome/What%20is%20Checkov.html?utm_source=github&utm_medium=organic_oss&utm_campaign=checkov)
 [![PyPI](https://img.shields.io/pypi/v/checkov)](https://pypi.org/project/checkov/)
-[![Python Version](https://img.shields.io/github/pipenv/locked/python-version/bridgecrewio/checkov)](#)
+[![Python Version](https://img.shields.io/github/pipenv/locked/python-version/pingsafeio/checkov)](#)
 [![Terraform Version](https://img.shields.io/badge/tf-%3E%3D0.12.0-blue.svg)](#)
 [![Downloads](https://pepy.tech/badge/checkov)](https://pepy.tech/project/checkov)
-[![slack-community](https://img.shields.io/badge/Slack-4A154B?style=plastic&logo=slack&logoColor=white)](https://slack.bridgecrew.io/)
+[![slack-community](https://img.shields.io/badge/Slack-4A154B?style=plastic&logo=slack&logoColor=white)](https://slack.pingsafe.io/)
  
 
 **Checkov** is a static code analysis tool for infrastructure-as-code.
 
 It scans cloud infrastructure provisioned using [Terraform](https://terraform.io/), Terraform plan, [Cloudformation](https://aws.amazon.com/cloudformation/), [Kubernetes](https://kubernetes.io/), [Dockerfile](https://www.docker.com/),  [Serverless](https://www.serverless.com/) or [ARM Templates](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/overview) and detects security and compliance misconfigurations using graph-based scanning.
  
-Checkov also powers [**Bridgecrew**](https://bridgecrew.io/?utm_source=github&utm_medium=organic_oss&utm_campaign=checkov), the developer-first platform that codifies and streamlines cloud security throughout the development lifecycle. Bridgecrew identifies, fixes, and prevents misconfigurations in cloud resources and infrastructure-as-code files. 
+Checkov also powers [**pingsafe**](https://pingsafe.io/?utm_source=github&utm_medium=organic_oss&utm_campaign=checkov), the developer-first platform that codifies and streamlines cloud security throughout the development lifecycle. pingsafe identifies, fixes, and prevents misconfigurations in cloud resources and infrastructure-as-code files.
 
-<a href="https://www.bridgecrew.cloud/login/signUp/?utm_campaign=checkov-github-repo&utm_source=github.com&utm_medium=get-started-button" title="Try_Bridgecrew">
-    <img src="https://dabuttonfactory.com/button.png?t=Try+Bridgecrew&f=Open+Sans-Bold&ts=26&tc=fff&hp=45&vp=20&c=round&bgt=unicolored&bgc=662eff" align="right" width="120">
+<a href="https://www.pingsafe.cloud/login/signUp/?utm_campaign=checkov-github-repo&utm_source=github.com&utm_medium=get-started-button" title="Try_pingsafe">
+    <img src="https://dabuttonfactory.com/button.png?t=Try+pingsafe&f=Open+Sans-Bold&ts=26&tc=fff&hp=45&vp=20&c=round&bgt=unicolored&bgc=662eff" align="right" width="120">
 </a>
 
 
-<a href="https://docs.bridgecrew.io?utm_campaign=checkov-github-repo&utm_source=github.com&utm_medium=read-docs-button" title="Docs">
+<a href="https://docs.pingsafe.io?utm_campaign=checkov-github-repo&utm_source=github.com&utm_medium=read-docs-button" title="Docs">
     <img src="https://dabuttonfactory.com/button.png?t=Read+the+Docs&f=Open+Sans-Bold&ts=26&tc=fff&hp=45&vp=20&c=round&bgt=unicolored&bgc=662eff" align="right" width="120">
 </a>
 
@@ -97,21 +97,21 @@ Checkov also powers [**Bridgecrew**](https://bridgecrew.io/?utm_source=github&ut
  * Supports Context-awareness policies based on in-memory graph-based scanning.
  * Supports Python format for attribute policies and YAML format for both attribute and composite policies.
  * Detects [AWS credentials](docs/2.Basics/Scanning%20Credentials%20and%20Secrets.md) in EC2 Userdata, Lambda environment variables and Terraform providers.
- * [Identifies secrets](https://bridgecrew.io/blog/checkov-secrets-scanning-find-exposed-credentials-in-iac/) using regular expressions, keywords, and entropy based detection.
+ * [Identifies secrets](https://pingsafe.io/blog/checkov-secrets-scanning-find-exposed-credentials-in-iac/) using regular expressions, keywords, and entropy based detection.
  * Evaluates [Terraform Provider](https://registry.terraform.io/browse/providers) settings to regulate the creation, management, and updates of IaaS, PaaS or SaaS managed through Terraform.
  * Policies support evaluation of [variables](docs/2.Basics/Handling%20Variables.md) to their optional default value.
  * Supports in-line [suppression](docs/2.Basics/Suppressing%20and%20Skipping%20Policies.md) of accepted risks or false-positives to reduce recurring scan failures. Also supports global skip from using CLI.
-* [Output](docs/2.Basics/Reviewing%20Scan%20Results.md) currently available as CLI, [CycloneDX](https://cyclonedx.org), JSON, JUnit XML and github markdown and link to remediation [guides](https://docs.bridgecrew.io/docs/aws-policy-index).
+* [Output](docs/2.Basics/Reviewing%20Scan%20Results.md) currently available as CLI, [CycloneDX](https://cyclonedx.org), JSON, JUnit XML and github markdown and link to remediation [guides](https://docs.pingsafe.io/docs/aws-policy-index).
  
 ## Screenshots
 
 Scan results in CLI
 
-![scan-screenshot](https://raw.githubusercontent.com/bridgecrewio/checkov/master/docs/checkov-recording.gif)
+![scan-screenshot](https://raw.githubusercontent.com/pingsafeio/checkov/master/docs/checkov-recording.gif)
 
 Scheduled scan result in Jenkins
 
-![jenikins-screenshot](https://raw.githubusercontent.com/bridgecrewio/checkov/master/docs/checkov-jenkins.png)
+![jenikins-screenshot](https://raw.githubusercontent.com/pingsafeio/checkov/master/docs/checkov-jenkins.png)
 
 ## Getting started
 
@@ -192,7 +192,7 @@ For that reason all findings will be reported line number 0 by checkov
 check: CKV_AWS_21: "Ensure all data stored in the S3 bucket have versioning enabled"
 	FAILED for resource: aws_s3_bucket.customer
 	File: /tf/tf.json:0-0
-	Guide: https://docs.bridgecrew.io/docs/s3_16-enable-versioning
+	Guide: https://docs.pingsafe.io/docs/s3_16-enable-versioning
   ```
 
 If you have installed `jq` you can convert json file into multiple lines with the following command:
@@ -205,7 +205,7 @@ checkov -f tf.json
 Check: CKV_AWS_21: "Ensure all data stored in the S3 bucket have versioning enabled"
 	FAILED for resource: aws_s3_bucket.customer
 	File: /tf/tf1.json:224-268
-	Guide: https://docs.bridgecrew.io/docs/s3_16-enable-versioning
+	Guide: https://docs.pingsafe.io/docs/s3_16-enable-versioning
 
 		225 |               "values": {
 		226 |                 "acceleration_status": "",
@@ -238,8 +238,8 @@ Start using Checkov by reading the [Getting Started](docs/1.Welcome/Quick%20Star
 
 
 ```sh
-docker pull bridgecrew/checkov
-docker run --tty --volume /user/tf:/tf bridgecrew/checkov --directory /tf
+docker pull pingsafe/checkov
+docker run --tty --volume /user/tf:/tf pingsafe/checkov --directory /tf
 ```
 Note: if you are using Python 3.6(Default version in Ubuntu 18.04) checkov will not work and it will fail with `ModuleNotFoundError: No module named 'dataclasses'`  error message. In this case, you can use the docker version instead.
 
@@ -361,7 +361,7 @@ You can override the default set of directories to skip by setting the environme
 
 #### VSCODE Extension
 
-If you want to use checkov's within vscode, give a try to the vscode extension available at [vscode](https://marketplace.visualstudio.com/items?itemName=Bridgecrew.checkov)
+If you want to use checkov's within vscode, give a try to the vscode extension available at [vscode](https://marketplace.visualstudio.com/items?itemName=pingsafe.checkov)
 
 ### Configuration using a config file
 
@@ -378,7 +378,7 @@ checkov --config-file path/to/config.yaml
 ```
 Users can also create a config file using the `--create-config` command, which takes the current command line args and writes them out to a given path. For example:
 ```sh
-checkov --compact --directory test-dir --docker-image sample-image --dockerfile-path Dockerfile --download-external-modules True --external-checks-dir sample-dir --no-guide --quiet --repo-id bridgecrew/sample-repo --skip-check CKV_DOCKER_3,CKV_DOCKER_2 --skip-fixes --skip-framework dockerfile --skip-suppressions --soft-fail --branch develop --check CKV_DOCKER_1 --create-config /Users/sample/config.yml
+checkov --compact --directory test-dir --docker-image sample-image --dockerfile-path Dockerfile --download-external-modules True --external-checks-dir sample-dir --no-guide --quiet --repo-id pingsafe/sample-repo --skip-check CKV_DOCKER_3,CKV_DOCKER_2 --skip-fixes --skip-framework dockerfile --skip-suppressions --soft-fail --branch develop --check CKV_DOCKER_1 --create-config /Users/sample/config.yml
 ```
 Will create a `config.yaml` file which looks like this:
 ```yaml
@@ -399,7 +399,7 @@ framework: all
 no-guide: true 
 output: cli 
 quiet: true 
-repo-id: bridgecrew/sample-repo 
+repo-id: pingsafe/sample-repo
 skip-check: 
   - CKV_DOCKER_3 
   - CKV_DOCKER_2 
@@ -434,21 +434,21 @@ Defaults:
 
 Contribution is welcomed! 
 
-Start by reviewing the [contribution guidelines](CONTRIBUTING.md). After that, take a look at a [good first issue](https://github.com/bridgecrewio/checkov/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22).
+Start by reviewing the [contribution guidelines](CONTRIBUTING.md). After that, take a look at a [good first issue](https://github.com/pingsafeio/checkov/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22).
 
 Looking to contribute new checks? Learn how to write a new check (AKA policy) [here](docs/6.Contribution/Contribution%20Overview.md).
 
 ## Disclaimer
 `checkov` does not save, publish or share with anyone any identifiable customer information.  
-No identifiable customer information is used to query Bridgecrew's publicly accessible guides.
-`checkov` uses Bridgecrew's API to enrich the results with links to remediation guides.
+No identifiable customer information is used to query pingsafe's publicly accessible guides.
+`checkov` uses pingsafe's API to enrich the results with links to remediation guides.
 To skip this API call use the flag `--no-guide`.
 
 ## Support
 
-[Bridgecrew](https://bridgecrew.io/?utm_source=github&utm_medium=organic_oss&utm_campaign=checkov) builds and maintains Checkov to make policy-as-code simple and accessible. 
+[pingsafe](https://pingsafe.io/?utm_source=github&utm_medium=organic_oss&utm_campaign=checkov) builds and maintains Checkov to make policy-as-code simple and accessible.
 
-Start with our [Documentation](https://bridgecrewio.github.io/checkov/) for quick tutorials and examples.
+Start with our [Documentation](https://pingsafeio.github.io/checkov/) for quick tutorials and examples.
 
-If you need direct support you can contact us at info@bridgecrew.io.
+If you need direct support you can contact us at info@pingsafe.io.
 
