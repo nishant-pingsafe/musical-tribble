@@ -1,4 +1,4 @@
-resource "google_storage_bucket" "terragoat_website" {
+resource "google_storage_bucket" "pingsafe-vuln_website" {
   name          = "terragot-${var.environment}"
   location      = var.location
   force_destroy = true
@@ -8,14 +8,14 @@ resource "google_storage_bucket" "terragoat_website" {
     git_last_modified_at = "2022-01-19-17-02-27"
     git_last_modified_by = "jameswoolfenden"
     git_modifiers        = "jameswoolfenden__nimrodkor"
-    git_org              = "bridgecrewio"
-    git_repo             = "terragoat"
+    git_org              = "pingsafeio"
+    git_repo             = "pingsafe-vuln"
     yor_trace            = "bd00cd2e-f53f-4daf-8d4d-74c47846c1cc"
   }
 }
 
 resource "google_storage_bucket_iam_binding" "allow_public_read" {
-  bucket  = google_storage_bucket.terragoat_website.id
+  bucket  = google_storage_bucket.pingsafe-vuln_website.id
   members = ["allUsers"]
   role    = "roles/storage.objectViewer"
 }

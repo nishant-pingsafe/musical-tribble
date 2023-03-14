@@ -1,5 +1,5 @@
 resource "google_sql_database_instance" "master_instance" {
-  name             = "terragoat-${var.environment}-master"
+  name             = "pingsafe-vuln-${var.environment}-master"
   database_version = "POSTGRES_11"
   region           = var.region
 
@@ -19,7 +19,7 @@ resource "google_sql_database_instance" "master_instance" {
 }
 
 resource "google_bigquery_dataset" "dataset" {
-  dataset_id = "terragoat_${var.environment}_dataset"
+  dataset_id = "pingsafe-vuln_${var.environment}_dataset"
   access {
     special_group = "allAuthenticatedUsers"
     role          = "READER"
@@ -30,8 +30,8 @@ resource "google_bigquery_dataset" "dataset" {
     git_last_modified_at = "2022-01-19-17-02-27"
     git_last_modified_by = "jameswoolfenden"
     git_modifiers        = "jameswoolfenden__nimrodkor"
-    git_org              = "bridgecrewio"
-    git_repo             = "terragoat"
+    git_org              = "pingsafeio"
+    git_repo             = "pingsafe-vuln"
     yor_trace            = "2560d883-bc3a-4cb6-b9fc-fb666edf626e"
   }
 }

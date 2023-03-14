@@ -1,7 +1,7 @@
 resource azurerm_kubernetes_cluster "k8s_cluster" {
-  dns_prefix          = "terragoat-${var.environment}"
+  dns_prefix          = "pingsafe-vuln-${var.environment}"
   location            = var.location
-  name                = "terragoat-aks-${var.environment}"
+  name                = "pingsafe-vuln-aks-${var.environment}"
   resource_group_name = azurerm_resource_group.example.name
   identity {
     type = "SystemAssigned"
@@ -28,8 +28,8 @@ resource azurerm_kubernetes_cluster "k8s_cluster" {
     git_last_modified_at = "2020-06-17 12:59:55"
     git_last_modified_by = "nimrodkor@gmail.com"
     git_modifiers        = "nimrodkor"
-    git_org              = "bridgecrewio"
-    git_repo             = "terragoat"
+    git_org              = "pingsafeio"
+    git_repo             = "pingsafe-vuln"
     yor_trace            = "6103d111-864e-42e5-899c-1864de281fd1"
   }
 }
