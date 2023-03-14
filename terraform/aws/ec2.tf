@@ -114,6 +114,46 @@ resource "aws_security_group" "web-node" {
   }
 }
 
+resource "aws_security_group" "web-node-abcd" {
+  # security group is open to the world in SSH port
+  name        = "${local.resource_prefix.value}-sg"
+  description = "${local.resource_prefix.value} Security Group"
+  vpc_id      = aws_vpc.web_vpc.id
+
+  ingress {
+    from_port = 80
+    to_port   = 80
+    protocol  = "tcp"
+    cidr_blocks = [
+    "0.0.0.0/0"]
+  }
+  ingress {
+    from_port = 22
+    to_port   = 22
+    protocol  = "tcp"
+    cidr_blocks = [
+    "0.0.0.0/0"]
+  }
+  egress {
+    from_port = 0
+    to_port   = 0
+    protocol  = "-1"
+    cidr_blocks = [
+    "0.0.0.0/0"]
+  }
+  depends_on = [aws_vpc.web_vpc]
+  tags = {
+    git_commit           = "d68d2897add9bc2203a5ed0632a5cdd8ff8cefb0"
+    git_file             = "terraform/aws/ec2.tf"
+    git_last_modified_at = "2020-06-16 14:46:24"
+    git_last_modified_by = "nimrodkor@gmail.com"
+    git_modifiers        = "nimrodkor"
+    git_org              = "pingsafeio"
+    git_repo             = "pingsafe-vuln"
+    yor_trace            = "b7af1b40-64eb-4519-a1a0-ab198db4b193"
+  }
+}
+
 resource "aws_vpc" "web_vpc" {
   cidr_block           = "172.16.0.0/16"
   enable_dns_hostnames = true
