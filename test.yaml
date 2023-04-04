@@ -1,0 +1,25 @@
+Resources:
+  MyCloudFrontDistribution:
+    Type: 'AWS::CloudFront::Distribution'
+    Properties:
+      DistributionConfig:
+        Comment: 'My CloudFront Distribution'
+        Enabled: true
+        ViewerCertificate:
+          CloudFrontDefaultCertificate: true
+        DefaultRootObject: index.html
+        Origins:
+          - DomainName: myorigin.example.com
+            Id: MyOrigin
+            CustomOriginConfig:
+              HTTPPort: 80
+              HTTPSPort: 443
+              OriginProtocolPolicy: http-only
+        DefaultCacheBehavior:
+          TargetOriginId: MyOrigin
+          ForwardedValues:
+            QueryString: false
+          ViewerProtocolPolicy: allow-all
+Outputs:
+  CloudFrontURL:
+    Value: !Sub 'https://${MyCloudFrontDistribution}.cloudfront.net/'
